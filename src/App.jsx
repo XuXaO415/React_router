@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Link, NavLink } from "react-router-dom";
 import VendingMachine from "./VendingMachine";
 import Soda from "./Soda";
 import Sardines from "./Sardines";
@@ -15,8 +15,10 @@ function App() {
         {/* Route component is used to render a component when the path matches the current URL. */}
         {/* Props set on Route is used to pass props to the component. */}
         <Route exact path="/">
+        {/* <Link to="/">Home</Link> */}
           <VendingMachine />
         </Route>
+        {/* <NavLink exact to="/soda"> */}
         <Route exact path="/soda">
           <Soda />
         </Route>
